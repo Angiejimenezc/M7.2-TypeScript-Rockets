@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohetes</title>
+    <link rel="icon" href="./img/favicon/favicon (1).ico">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min (2).css">
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!-- Animate cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    </header>
+    <div class="cabecera p-2 mb-0">
+        <h1 class="display-1 text-white-50 text-capitalize">Cohetes</h1>
+    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button class="btn btn-outline-success m-2" onclick="crearCohete(1)" type="button"
+                            value="crear">Crear Cohete 1</button>
+                        <button class="btn btn-outline-danger m-2" onclick="acelerarCohete(1)" type="button"
+                            value="crear">Acelerar Cohete </button>
+                        <button class="btn btn-outline-secondary m-2" onclick="frenarCohete(1)" type="button"
+                            value="crear">Frenar Cohete </button>
+                        <button class="btn btn-outline-light m-2" onclick="mostrarCohete(1)" type="button"
+                            value="crear">Información del Cohete </button>
+                    </div>
+                    <div>
+                        <br>
+                        <img src="/views/public/img/cohete1.png" class="cohete_1 animate__animated " id="cohete1"
+                            width="67%">
+                        <h3 class="text-warning bg-transparent" id="cohete1Crear"></h3>
+                        <h5 class="text-dark bg-transparent" id="velocidad1"></h5>
+                        <h4 class="text-dark bg-transparent" id="cohete1Error"></h4>
+                        <h5 class="text-dark bg-transparent" id="cohete1Mostrar"></h5>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button class="btn btn-outline-success m-2" onclick="crearCohete(2)" type="button"
+                            value="crear">Crear Cohete 2</button>
+                        <button class="btn btn-outline-danger m-2" onclick="acelerarCohete(2)" type="button"
+                            value="crear">Acelerar Cohete </button>
+                        <button class="btn btn-outline-secondary m-2" onclick="frenarCohete(2)" type="button"
+                            value="crear">Frenar Cohete </button>
+                        <button class="btn btn-outline-light m-2" onclick="mostrarCohete(2)" type="button"
+                            value="crear">Información del Cohete </button>
+                    </div>
+                    <div>
+                        <br>
+                        <img src="/views/public/img/cohete2.png" class="cohete_2 animate__animated " id="cohete2"
+                            width="88%">
+                        <h3 class="text-warning bg-transparent" id="cohete2Crear"></h3>
+                        <h5 class="text-dark bg-transparent" id="velocidad2"></h5>
+                        <h4 class="text-dark bg-transparent" id="cohete2Error"></h4>
+                        <h5 class="text-dark bg-transparent" id="cohete2Mostrar"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/models/cohete.js"></script>
+    <script src="/controllers/controller.js"></script>
+    <!-- Optional JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

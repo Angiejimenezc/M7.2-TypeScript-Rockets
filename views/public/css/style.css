@@ -1,0 +1,30 @@
+body {
+  background-image: url(/views/public/img/StarfieldSimulation.gif);
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+}
+h1 {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+h5 {
+  font-size: 20px;
+  display: flex;
+  text-align: justify;
+}
+.cohete_1 {
+  visibility: hidden;
+}
+
+.cohete_2 {
+  visibility: hidden;
+}
+
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 900ms;
+}
+
+.animate__animated.animate__backOutUp {
+  --animate-duration: 600ms;
+}
