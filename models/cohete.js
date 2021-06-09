@@ -9,9 +9,9 @@ class Rocket {
     }
     getRocket() {
         return {
-            "rocketID": this.rocketID,
-            "propellers": this.propellers,
-            "propellersMaxpower": this.propellersMaxpower
+            rocketID: this.rocketID,
+            propellers: this.propellers,
+            propellersMaxpower: this.propellersMaxpower,
         };
     }
     rocketSpeed() {

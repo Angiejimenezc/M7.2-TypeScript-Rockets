@@ -1,7 +1,7 @@
-var rocket1: Rocket;
-var rocket2: Rocket;
-var rocket1Power: number[] = [10, 30, 80];
-var rocket2Power: number[] = [30, 40, 50, 50, 30, 10];
+let rocket1: Rocket;
+let rocket2: Rocket;
+let rocket1Power: number[] = [10, 30, 80];
+let rocket2Power: number[] = [30, 40, 50, 50, 30, 10];
 
 function rocketCreate(x: number) {
     if (x === 0) {
@@ -35,7 +35,8 @@ function rocketSpeed(x: number) {
 
 function rocketSpeedUp(x: number) {
     if (x === 0) {
-        rocket1.speedUp();
+        rocket1.speedUp()!;
+     
         return rocket1.getSpeed();
     } else if (x === 1) {
         rocket2.speedUp();
@@ -45,7 +46,7 @@ function rocketSpeedUp(x: number) {
 
 function rocketBrake(x: number) {
     if (x === 0) {
-        rocket1.brake();
+        rocket1.brake()!;
         return rocket1.getSpeed();
     } else if (x === 1) {
         rocket2.brake();

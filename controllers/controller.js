@@ -1,8 +1,8 @@
 "use strict";
-var rocket1;
-var rocket2;
-var rocket1Power = [10, 30, 80];
-var rocket2Power = [30, 40, 50, 50, 30, 10];
+let rocket1;
+let rocket2;
+let rocket1Power = [10, 30, 80];
+let rocket2Power = [30, 40, 50, 50, 30, 10];
 function rocketCreate(x) {
     if (x === 0) {
         rocket1 = new Rocket("32WESSDS", 3, rocket1Power);
