@@ -28,64 +28,63 @@
     <!-- Animate cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 
 <body>
     </header>
     <div class="cabecera p-2 mb-0">
-        <h1 class="display-1 text-white-50 text-capitalize">Cohetes</h1>
+        <h1 class="display-1 text-white-50 text-capitalize animate__animated animate__jello">Cohetes</h1>
     </div>
     </header>
-    <main>
-        <div class="container">
+
+    <body>
+        <section class="container pt-3">
             <div class="row">
-                <div class="col-sm">
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <button class="btn btn-outline-success m-2" onclick="crearCohete(1)" type="button"
-                            value="crear">Crear Cohete 1</button>
-                        <button class="btn btn-outline-danger m-2" onclick="acelerarCohete(1)" type="button"
-                            value="crear">Acelerar Cohete </button>
-                        <button class="btn btn-outline-secondary m-2" onclick="frenarCohete(1)" type="button"
-                            value="crear">Frenar Cohete </button>
-                        <button class="btn btn-outline-light m-2" onclick="mostrarCohete(1)" type="button"
-                            value="crear">Información del Cohete </button>
-                    </div>
-                    <div>
-                        <br>
-                        <img src="../public/img/cohete1.png" class="cohete_1 animate__animated " id="cohete1"
-                            width="76%">
-                        <h3 class="text-warning bg-transparent" id="cohete1Crear"></h3>
-                        <h5 class="text-dark bg-transparent" id="velocidad1"></h5>
-                        <h4 class="text-dark bg-transparent" id="cohete1Error"></h4>
-                        <h5 class="text-dark bg-transparent" id="cohete1Mostrar"></h5>
-                    </div>
+                <div class="mb-3 col-6 text-center">
+                    <h2 id="rocket_1Name"></h2>
+                    <button class="btn btn-outline-info m-2 border-0 " id="createRocket1">ACTIVAR COHETE 1</button>
+
+                    <img src="./img/cohete1.png" alt="Rocket 1 32WESSDS" id="rocket_1"
+                        class="m-2 img-fluid animate__animated animate__bounce" width="73%">
+                    <button class="btn btn-outline-info m-2 d-none border-0" id="printRocket1">VER CONFIGURACIÓN
+                    </button>
+                    <div id="rocket_1Info"></div>
+                    <!-- <br> -->
+                    <button class="btn btn-success m-2" id="accelRocket1">Acelerar Cohete 1</button>
+                    <button class="btn btn-danger m-2" id="breakRocket1">Frenar Cohete 1</button>
+                    <div id="acelerate1"></div>
                 </div>
-                <div class="col-sm">
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <button class="btn btn-outline-success m-2" onclick="crearCohete(2)" type="button"
-                            value="crear">Crear Cohete 2</button>
-                        <button class="btn btn-outline-danger m-2" onclick="acelerarCohete(2)" type="button"
-                            value="crear">Acelerar Cohete </button>
-                        <button class="btn btn-outline-secondary m-2" onclick="frenarCohete(2)" type="button"
-                            value="crear">Frenar Cohete </button>
-                        <button class="btn btn-outline-light m-2" onclick="mostrarCohete(2)" type="button"
-                            value="crear">Información del Cohete </button>
-                    </div>
-                    <div>
-                        <br>
-                        <img src="../public/img/cohete2.png" class="cohete_2 animate__animated " id="cohete2"
-                            width="100%">
-                        <h3 class="text-warning bg-transparent" id="cohete2Crear"></h3>
-                        <h5 class="text-dark bg-transparent" id="velocidad2"></h5>
-                        <h4 class="text-dark bg-transparent" id="cohete2Error"></h4>
-                        <h5 class="text-dark bg-transparent" id="cohete2Mostrar"></h5>
-                    </div>
+                <div class="mb-3 col-6 d-xl-table-row text-center">
+                    <h2 id="rocket_2Name"></h2>
+                    <button class="btn btn-outline-info border-0" id="createRocket2">ACTIVAR COHETE 2</button>
+
+                    <img src="./img/cohete2.png" alt="Rocket 2 LDSFJA32" id="rocket_2"
+                        class="m-2 img-fluid animate__animated animate__bounce" width="97%">
+                    <button class="btn btn-outline-info m-2 d-none border-0" id="printRocket2"> VER CONFIGURACIÓN
+                    </button>
+                    <div id="rocket_2Info"></div>
+
+                    <button class="btn btn-success m-2 border-bottom-2" id="accelRocket2">Acelerar Cohete 2</button>
+                    <button class="btn btn-danger m-2" id="breakRocket2">Frenar Cohete 2</button>
+                    <div id="acelerate2"></div>
                 </div>
             </div>
-        </div>
-    </main>
-    <script src="../../models/Cohete.js"></script>
-    <script src="../../controllers/controller.js"></script>
-</body>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="../../models/Cohete.js"></script>
+        <script src="../../controllers/controller.js"></script>
+        <script src="../../views/public/js/vistas.js"></script>
+
+    </body>
 
 </html>
