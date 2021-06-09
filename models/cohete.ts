@@ -34,6 +34,7 @@ class Rocket {
 
   speedUp(): void {
     this.speed += 10;
+    
   }
 
   brake(): void {
@@ -48,3 +49,6 @@ class Rocket {
     return this.speed;
   }
 }
+
+
+

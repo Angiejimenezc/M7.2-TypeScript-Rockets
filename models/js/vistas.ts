@@ -72,8 +72,8 @@ infoRocket_2.addEventListener("click", function () {
 });
 
 //Acelerar cohetes
-var showRocket1Acelerate: any = document.querySelector("#acelerate1");
-var showRocket2Acelerate: any = document.querySelector("#acelerate2");
+let showRocket1Acelerate: any = document.querySelector("#acelerate1");
+let showRocket2Acelerate: any = document.querySelector("#acelerate2");
 
 acelerateRocket_1.addEventListener("click", function () {
   showRocket1Acelerate.innerHTML =
@@ -93,10 +93,14 @@ acelerateRocket_2.addEventListener("click", function () {
 brakeRocket_1.addEventListener("click", function () {
   showRocket1Acelerate.innerHTML = "<h4>Velocidad: " + rocketBrake(0) + "<Km/h";
   animateCSS("#rocket_1", "bounceInDown");
+  console.log(showRocket1Acelerate);
+
 });
 brakeRocket_2.addEventListener("click", function () {
   showRocket2Acelerate.innerHTML = "<h4>Velocidad: " + rocketBrake(1) + "Km/h";
   animateCSS("#rocket_2", "bounceInDown");
+  console.log(showRocket2Acelerate);
+
 });
 // promesa para reiniciar las animaciones
 const animateCSS = (element: any, animation: any, prefix = "animate__") =>

@@ -35,8 +35,10 @@ function rocketSpeed(x: number) {
 
 function rocketSpeedUp(x: number) {
     if (x === 0) {
-        rocket1.speedUp()!;
+        rocket1.speedUp();
      
+        console.log(rocketSpeedUp);
+
         return rocket1.getSpeed();
     } else if (x === 1) {
         rocket2.speedUp();
@@ -46,7 +48,7 @@ function rocketSpeedUp(x: number) {
 
 function rocketBrake(x: number) {
     if (x === 0) {
-        rocket1.brake()!;
+        rocket1.brake();
         return rocket1.getSpeed();
     } else if (x === 1) {
         rocket2.brake();
