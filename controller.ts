@@ -1,7 +1,7 @@
 let rockets: Rocket[] = new Array();
 // ---------------- GLOBAL FUNCTION CREATE ROCKET---------------- //
-function crearRocket(code: string) {
-  if (code === "32WESSDS") {
+function crearRocket(codigo: string) {
+  if (codigo === "32WESSDS") {
     let outputRocket1 = document.getElementById(
       "rocket1"
     ) as HTMLParagraphElement;
@@ -9,9 +9,9 @@ function crearRocket(code: string) {
     let thruster2 = new Thruster(0, 30);
     let thruster3 = new Thruster(0, 80);
     let thrusters: Thruster[] = [thruster1, thruster2, thruster3];
-    create(code, thrusters);
+    create(codigo, thrusters);
   }
-  if (code === "LDSFJA32") {
+  if (codigo === "LDSFJA32") {
     let thruster1 = new Thruster(0, 30);
     let thruster2 = new Thruster(0, 40);
     let thruster3 = new Thruster(0, 50);
@@ -26,7 +26,7 @@ function crearRocket(code: string) {
       thruster5,
       thruster6,
     ];
-    create(code, thrusters);
+    create(codigo, thrusters);
   }
   function create(codigo: string, thrusters: Thruster[]) {
     var i: number;
@@ -87,7 +87,6 @@ function acelerarRocket(codigo: string) {
       outputRocket.style.color = "#d43648";
       outputRocket.innerHTML = `Uppsss!<br>El Cohete ${rockets[i].codigo} Ha llegado a la Máxima Potencia`;
       break;
-     
     }
   }
 }

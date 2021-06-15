@@ -1,16 +1,16 @@
 "use strict";
 var rockets = new Array();
 // ---------------- GLOBAL FUNCTION CREATE ROCKET---------------- //
-function crearRocket(code) {
-    if (code === "32WESSDS") {
+function crearRocket(codigo) {
+    if (codigo === "32WESSDS") {
         var outputRocket1 = document.getElementById("rocket1");
         var thruster1 = new Thruster(0, 10);
         var thruster2 = new Thruster(0, 30);
         var thruster3 = new Thruster(0, 80);
         var thrusters = [thruster1, thruster2, thruster3];
-        create(code, thrusters);
+        create(codigo, thrusters);
     }
-    if (code === "LDSFJA32") {
+    if (codigo === "LDSFJA32") {
         var thruster1 = new Thruster(0, 30);
         var thruster2 = new Thruster(0, 40);
         var thruster3 = new Thruster(0, 50);
@@ -25,7 +25,7 @@ function crearRocket(code) {
             thruster5,
             thruster6,
         ];
-        create(code, thrusters);
+        create(codigo, thrusters);
     }
     function create(codigo, thrusters) {
         var i;
