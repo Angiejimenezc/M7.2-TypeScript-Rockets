@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohetes</title>
+    <link rel="icon" href="/views/img/favicon/favicon (1).ico">
+    <link rel="stylesheet" href="./views/bootstrap/bootstrap.min (2).css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a962704da9.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <!-- Animate cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <link rel="stylesheet" href="./views/css/style.css">
+    <title>Rockets</title>
+</head>
+</header>
+<div class="cabecera p-2 mb-0">
+    <h1 class="display-1 text-white-50 text-uppercase animate__animated animate__jello">Cohetes</h1>
+    <hr>
+</div>
+</header>
+
+<body>
+    <div class="container-fluid">
+        <div class="row m-auto" id="row2">
+            <div class="col-4">
+                <h2 class=text-white-50>32WESSDS</h2>
+                <p id="rocket1"></p>
+                <img src="./views/img/cohete1.png" alt="Rocket 1 32WESSDS" id="rocket_1"
+                    class="m-2 img-fluid animate__animated animate__bounce" width="60%">
+            </div>
+            <div class="col-4">
+                <p id="allRockets"></p>
+            </div>
+            <div class="col-4">
+                <h2 class=text-white-50>LDSFJA32</h2>
+                <p id="rocket2"></p>
+                <img src="./views/img/cohete2.png" alt="Rocket 2 LDSFJA32" id="rocket_2"
+                    class="m-2 img-fluid animate__animated animate__bounce" width="80%">
+            </div>
+        </div>
+        <div class="row m-auto" id="rowButtons">
+            <div class="col-4" id="col1">
+
+                <div class="row">
+                    <button class="col-9 btn btn-outline-dark text-white-50" id="create1"
+                        onclick="crearRocket('32WESSDS')">Crear Cohete</button>
+
+                </div>
+
+                <div class="row">
+                    <button class="col-4 btn btn-outline-success m-2" id="accelerate1"
+                        onclick="acelerarRocket('32WESSDS')">Acelerar</button>
+                    <button class="col-4 btn btn-outline-danger m-2" id="decelerate1"
+                        onclick="frenarRocket('32WESSDS')">Frenar</button>
+                </div>
+                <div class="row">
+                    <button class="col-9 btn btn-outline-warning m-2" id="print1" onclick="mostrarRocket('32WESSDS')">
+                        Info. Cohete</button>
+                </div>
+            </div>
+            <div class="col-4">
+
+                <button class="col-9 btn btn-outline-warning text-uppercase m-2" id="btnPrintAllRockets"
+                    onclick="mostrarTodoRockets()">
+                    Información Cohetes</button>
+            </div>
+            <div class="col-4" id="col2">
+                <div class="row">
+                    <button class="col-9 btn btn-outline-dark text-white-50" id="create2"
+                        onclick="crearRocket('LDSFJA32')">Crear
+                        Cohete</button>
+
+                </div>
+
+                <div class="row">
+                    <button class="col-4 btn btn-outline-success m-2" id="accelerate2"
+                        onclick="acelerarRocket('LDSFJA32')">Acelerar</button>
+                    <button class="col-4 btn btn-outline-danger m-2" id="decelerate2"
+                        onclick="frenarRocket('LDSFJA32')">Frenar</button>
+                </div>
+                <div class="row">
+                    <button class="col-9 btn btn-outline-warning " id="print2" onclick="mostrarRocket('LDSFJA32')">
+                        Info. Cohete</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------------ BOOTSTRAP ------------------ -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- ------------------ SCRIPTS ------------------ -->
+    <script src="/controller.js"></script>
+    <script src="/model/rocket.js"></script>
+    <script src="/model/thurster.js"></script>
+</body>
+
+</html>
